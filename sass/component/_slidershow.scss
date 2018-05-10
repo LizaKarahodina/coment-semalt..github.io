@@ -1,0 +1,118 @@
+.slidershow__item {display: none}
+.slidershow__item-inside{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	
+}
+.slidershow__img {
+	display: block;
+  margin: 0 40px 0 20px;
+}
+
+/* Slideshow container */
+.slidershow {
+  width: 100%;
+  position: relative;
+  margin: 30px 0;
+}
+
+.slidershow__text{
+  font-size: 24px;
+}
+
+
+/* Next & previous buttons */
+.slidershow__prev, .slidershow__next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%; 
+
+  
+  width: auto;
+  padding: 16px;
+  transition: 0.3s ;
+  margin-top: -22px;
+  color: #999;
+  font-weight: bold;
+  font-size: 18px;
+  
+  
+}
+
+/* Position the "next button" to the right */
+.slidershow__next {
+  right: 0;
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slidershow__prev:hover, .slidershow__next:hover {
+
+	transform: scale(1.5); 
+  
+  
+ } 
+
+
+
+
+/* The dots/bullets/indicators */
+.slidershow__dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .slidershow__dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+/* Slidershow in press */
+.slidershow-press{
+  width: 662px;
+  height: 275px;
+  background-color: #f7f7f8;
+  display: flex;
+  justify-content: center;
+
+  &__img{
+    margin-top: 35px;
+    margin-bottom: 27px;
+  }
+
+  &__text{
+    font-size: 20px;
+    font-style: regular;
+  }
+  &__link{
+    color: #3498db;
+  }
+}
+
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
